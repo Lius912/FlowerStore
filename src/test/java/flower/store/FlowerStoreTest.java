@@ -7,19 +7,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerStoreTest {
-    private double price = 80;
-    private double priceTwo = 100;
-    private double length = 8.0;
-    private double lengthTwo = 9.0;
+    private static final double price = 80;
+    private static final double priceTwo = 100;
+    private static final double length = 8.0;
+    private static final double lengthTwo = 9.0;
 
 
 
     @Test
     public void testSearch() {
-        Flower flower = new Flower(length
-        , FlowerColor.GREEN, price, FlowerType.CHAMOMILE);
-        Flower flowerTwo = new Flower(length
-        , FlowerColor.BLUE, price, FlowerType.CHAMOMILE);
+        Flower flower = new Flower(length,
+        FlowerColor.GREEN,
+        price,
+        FlowerType.CHAMOMILE);
+        Flower flowerTwo = new Flower(length,
+        FlowerColor.BLUE,
+        price,
+        FlowerType.CHAMOMILE);
         Flower flowerThree = new Flower(length
         , FlowerColor.GREEN, priceTwo, FlowerType.CHAMOMILE);
         Flower flowerFour = new Flower(lengthTwo

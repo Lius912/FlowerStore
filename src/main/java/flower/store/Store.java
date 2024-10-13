@@ -14,16 +14,16 @@ public class Store {
         flowers.add(flower);
     }
 
-    public List<Flower> search(Flower flower_match) {
+    public List<Flower> search(Flower flowerMatch) {
         List<Flower> matchingFlowers = new ArrayList<>();
         for (Flower flower: flowers) {
-            if (!flower.getColor().equals(flower_match.getColor())) {
+            if (!flower.getColor().equals(flowerMatch.getColor())) {
                 continue;
             }
-            if (!flower.getFlowerType().equals(flower_match.getFlowerType())) {
+            if (!flower.getFlowerType().equals(flowerMatch.getFlowerType())) {
                 continue;
             }
-            if (flower.getSepalLength() != flower_match.getSepalLength()) {
+            if (flower.getSepalLength() != flowerMatch.getSepalLength()) {
                 continue;
             }
             matchingFlowers.add(flower);
