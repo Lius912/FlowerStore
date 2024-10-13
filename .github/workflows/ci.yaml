@@ -26,3 +26,8 @@ jobs:
           JAVA_FILE_NAME: checkstyle.xml
       - name: Test with Maven
         run: mvn --batch-mode --update-snapshots package -e -X
+      - name: Upload test reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: surefire-reports
+          path: target/surefire-reports/
